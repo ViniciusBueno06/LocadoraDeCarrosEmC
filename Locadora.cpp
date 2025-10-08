@@ -1,7 +1,4 @@
-/*
-VINICIUS BUENO GERMINIANI
-RA 262515342
-*/
+
 
 //-------------------------------------------------------------------------------BIBLIOTECAS
 
@@ -55,7 +52,7 @@ void InsertionSortCarro(TpCarros TabCarros[TF],int TL);
 void CadastrarLocacao(TpLocacoes TabLocacoes[TF],int TLcarro,int TLcliente,int &TLloc);
 void SelectionSortCarroPorCod(TpCarros TabCarros[TF], int TL);
 
-//Exclusıes
+//Exclus√µes
 void ExcluirCliente(TpClientes TabClientes[TF],int &TL);
 void ExcluirCarro(TpCarros TabCarros[TF],int &TL,int TLloc);
 void ExcluirLocacao(TpLocacoes TabLocacoes[TF],int &TL);
@@ -129,7 +126,7 @@ void inserirDados(TpClientes TabClientes[TF],TpCarros TabCarros[TF],TpLocacoes T
     TabClientes[8].QtdLocacoes=5;
 
     strcpy(TabClientes[9].cpf, "101.202.303-40");
-    strcpy(TabClientes[9].nome, "Jo„o");
+    strcpy(TabClientes[9].nome, "Jo√£o");
     strcpy(TabClientes[9].telefone, "(18)77889-9001");
     TabClientes[9].QtdLocacoes=1;
 
@@ -948,7 +945,7 @@ void CadastroCarro(TpCarros TabCarros[TF],int &TL){
 		textcolor(2);printf("===================Cadastro de carro==================");
 		textcolor(15);printf("\nDigite o codigo do carro: ");
 		scanf("%d",&TabCarros[TL].codCar);
-		printf("VC ESTA NA PARTE DE MOSTRAR O TL, … A POSICAO ONDE VAI SER SALVO O CARRO\nTL= %d",TL);
+		printf("VC ESTA NA PARTE DE MOSTRAR O TL, √â A POSICAO ONDE VAI SER SALVO O CARRO\nTL= %d",TL);
 		getch();
 		printf("\nDigite o modelo do carro: ");
 		fflush(stdin);
@@ -1029,7 +1026,7 @@ void AlterarCarroChaveCod(TpCarros TabCarros[TF],int &TL,int auxCod){
 		textcolor(15);printf("---------------------------------------------------------------\n");
 		printf("\n%10d | %21s | %9s | R$:%.2f\n",TabCarros[pos].codCar,auxModel,auxCateg,auxPreco);
 		textcolor(15);printf("---------------------------------------------------------------\n");
-		textcolor(10);printf("\nDeseja confirmar as alteraÁıes? [S/N]\n");
+		textcolor(10);printf("\nDeseja confirmar as altera√ß√µes? [S/N]\n");
 		textcolor(15);
 		char op;
 		do{
@@ -1219,7 +1216,7 @@ void CadastrarLocacao(TpLocacoes TabLocacoes[TF],int TLcarro,int TLcliente,int &
 	scanf("%d",&auxCod);
 	posCarro=BuscaBinariaCarro(TabCarros,TLcarro,auxCod);
 	if(posCarro==-1){
-		textcolor(14);printf("Carro n„o encontrado no sistema!");
+		textcolor(14);printf("Carro n√£o encontrado no sistema!");
 		Sleep(1000);
 		textcolor(15);
 		return;
@@ -1347,7 +1344,7 @@ void AlterarLocacaoChaveCpf(TpLocacoes TabLocacoes[TF],TpCarros TabCarros[TF],in
 	scanf("%d",&auxCod);
 	posCarro=BuscaBinariaCarro(TabCarros,TL,auxCod);
 	if(posCarro==-1){
-		printf("Carro n„o encontrado no sistema!");
+		printf("Carro n√£o encontrado no sistema!");
 		Sleep(1000);
 		return;
 	}
@@ -1401,3 +1398,4 @@ void EditarLocacao(TpLocacoes TabLocacoes[TF],TpCarros TabCarros[TF],int &TL,int
 																		 
 																 
 	
+
